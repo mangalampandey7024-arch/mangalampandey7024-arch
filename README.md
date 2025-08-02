@@ -1,45 +1,28 @@
-README.txt
-==========
+#include <stdio.h>
 
-Project Name: [Your Project Name Here]
-Version: 1.0
-Author: [Your Name]
-Date: [Date]
+int main() {
+    float sub1, sub2, sub3, sub4, sub5, total, percentage;
 
-Description:
-------------
-This project is designed to [brief description of what your project does]. It is built using [language/technology used], and its main goal is to [state the primary goal or purpose of the project].
+    // Input marks for 5 subjects
+    printf("Enter marks of 5 subjects out of 100:\n");
+    printf("Subject 1: ");
+    scanf("%f", &sub1);
+    printf("Subject 2: ");
+    scanf("%f", &sub2);
+    printf("Subject 3: ");
+    scanf("%f", &sub3);
+    printf("Subject 4: ");
+    scanf("%f", &sub4);
+    printf("Subject 5: ");
+    scanf("%f", &sub5);
 
-Installation:
--------------
-1. Make sure you have [any dependencies or requirements] installed.
-2. Clone or download this repository.
-3. Navigate to the project directory.
-4. Run the following command(s) to set it up:
-   [example: pip install -r requirements.txt]
-   [example: npm install]
+    // Calculate total and percentage
+    total = sub1 + sub2 + sub3 + sub4 + sub5;
+    percentage = (total / 500.0) * 100;
 
-Usage:
-------
-To run the project:
-1. [Step 1]
-2. [Step 2]
-3. [Command to execute]
+    // Output the result
+    printf("\nTotal Marks = %.2f / 500\n", total);
+    printf("Percentage = %.2f%%\n", percentage);
 
-Example:
---------
-[Provide a sample input/output or command-line example]
-
-Files:
-------
-- main.py / index.html / etc. - [description]
-- config.json - [description]
-- README.txt - This file
-
-License:
---------
-This project is licensed under the [MIT License / GPL / etc.].
-
-Contact:
---------
-For any questions or feedback, contact [your email or GitHub link].
+    return 0;
+}
